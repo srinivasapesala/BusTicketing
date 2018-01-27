@@ -38,6 +38,7 @@ public class UserLogin {
 		//String poNumber=request.getParameter("poNumber");
 		//String product=user.getUserId();
 		Boolean message = registrationService.validateUserNameAndPassword(user);//postService.prdBamToNewStyleValidation(product);
+		System.out.println("Hello");
 		ModelAndView modelAndView=new ModelAndView("NewStyleMessage");
 		modelAndView.addObject("message",message);
 		if(message) {
